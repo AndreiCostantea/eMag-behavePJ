@@ -18,16 +18,16 @@ Feature: I am an user trying to log in
     When login: I fill the email field with value: "andreicostantea"
     When login: I click "Continua" button
     Then login: Error message is displayed with message: "Email invalid"
-    # => acest test nu functioneaza daca apare pe site anti bot sistem
-    # => am pus un sleep mai lung pentru a putea rezolva manual sistemul anti bot
+    # => tests will not work if you dont manually get past the anti bot system
+    # => there are longer sleep() functions for you to have enough time to resolve the anti bot system
 
   @test23
   Scenario: I click "Continua" with a valid email input
     When login: I fill the email field with value: "andrei.costantea@yahoo.com"
     When login: I click "Continua" button
     Then login: "Introdu parola contului tau eMAG" message is displayed
-    # => acest test nu functioneaza daca apare pe site anti bot sistem
-    # => am pus un sleep mai lung pentru a putea rezolva manual sistemul anti bot
+   # => tests will not work if you dont manually get past the anti bot system
+   # => there are longer sleep() functions for you to have enough time to resolve the anti bot system
 
   @test24
   Scenario: I am an user who needs help with his account
@@ -42,5 +42,5 @@ Feature: I am an user trying to log in
     When login: I fill the password field with value: "Parolasigura1"
     When login: I click "Continua" button
     Then login: The URL changes to: "https://www.emag.ro/"
-    # => probleme daca apar anti bot
-    # => am pus un sleep mai lung pentru a putea rezolva manual sistemul anti bot
+    # => tests will not work if you dont manually get past the anti bot system
+    # => there are longer sleep() functions for you to have enough time to resolve the anti bot system
