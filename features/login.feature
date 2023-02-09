@@ -35,12 +35,12 @@ Feature: I am an user trying to log in
     Then login: A new browser tab opens, I click it
     Then login: The URL of the new tab is: "https://www.emag.ro/help/cum-ma-loghez/"
 
-#  @test25
-#  Scenario: I am an user connecting with correct values
-#    When login: I fill the email field with value: "muhahamuhaha110@yahoo.com"
-#    When login: I click "Continua" button
-#    When login: I fill the password field with value: "Parolasigura1"
-#    When login: I click "Continua" button
-#    Then login: The URL changes to: "https://www.emag.ro/"
-#    # => probleme daca apar anti bot
-#    # => am pus un sleep mai lung pentru a putea rezolva manual sistemul anti bot
+  @test25
+  Scenario: I am an user connecting with correct values
+    When login: I fill the email field with value: "muhahamuhaha110@yahoo.com"
+    When login: I click "Continua" button
+    When login: I fill the password field with value: "Parolasigura1"
+    When login: I click "Continua" button
+    Then login: The URL changes to: "https://www.emag.ro/"
+    # => probleme daca apar anti bot
+    # => am pus un sleep mai lung pentru a putea rezolva manual sistemul anti bot
